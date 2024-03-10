@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'mon';
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: 'mon-b';
+    src: url('../fonts/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: 'mon-sb';
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "mon";
+}
+
+header{
+    width: 100%;
+}
+nav{
+    background-color: #333;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    &:hover{
+        color: #f1c40f;
+    }
+}
+input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    width: 100%;
+    &:focus{
+        outline: none;
+        box-shadow: 0 0 5px #f1c40f;
+    }
+}
+select{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    width: 100%;
+    &:focus{
+        outline: none;
+        box-shadow: 0 0 5px #f1c40f;
+    }
+}
+button{
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1c40f;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    &:hover{
+        background-color: #f39c12;
+    }
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.t-container{
+    width: 80%;
+    background: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.t-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.t-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 5px;
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+.modal-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.close{
+    color: #333;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+td{
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+.actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

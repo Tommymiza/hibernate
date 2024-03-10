@@ -1,0 +1,5 @@
+package type;
+
+public enum Grade {
+    MAITRE_CONFERENCE, DOCTEUR, DOCTEUR_HDR, PROFESSEUR, PROFESSEUR_TITULAIRE
+}
